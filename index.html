@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+   
+    <title>Responsive App Design</title>
+</head>
+<body>
+      <div class="container">
+
+        <div class="phone">
+            <div class="interface">
+                 <div class="sideMenu" id='SideMenu'>
+                     <img src="./images/618a5abb0ca72efdea694466_DrawKit Webflow Grid-min (4).png" alt="" class="sideImg">
+                     <h2>Code Dev</h2>
+                 </div>
+                <div class="topContent">
+                    <!-- Bars Button -->
+                    <div class="barsBtn" id='button' onclick="toggle()">
+                        <div class="Bar"></div>
+                        <div class="Bar"></div>
+                        <div class="Bar"></div>
+                    </div>
+                    <img src="./images/TOPIMG.png" class="icon" alt="">
+                </div>
+                <div class="bottomContent">
+                   <div class="info">
+                    <h2>Welcome to Code Dev</h2>
+                    <p>Welcome guys ! Let's Join with us to Learn Html , Css , Js Python and much More... <br><span>@Code Dev</span></p>
+                    <a href="#" class="joinBtn">Join us</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <script>
+
+          function toggle() {
+            var sidemenu = document.getElementById('SideMenu');
+            sidemenu.classList.toggle('toggle');
+            document.getElementById('button').classList.toggle('btnclicked')
+          }
+      </script>
+</body>
+</html>

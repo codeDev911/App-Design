@@ -1,0 +1,162 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(232, 245, 253);
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.phone{
+    position: relative;
+    width: 380px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 4px 14px 1px rgb(41, 41, 41);
+ 
+}
+.interface{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 194, 194);  
+    
+}
+.topContent{
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    border-bottom-right-radius: 80px;
+    background: #fff; 
+
+}
+.topContent .icon{
+       width: 280px; 
+}
+.topContent::after{
+    content: ' ';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    top: 250px;
+    left: 0px;
+    z-index: 211;
+}
+.bottomContent{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(31, 194, 194);  
+    border-top-left-radius: 80px;
+    z-index: 211; 
+    color: white;
+
+}
+.info{
+    position: relative;
+    top: 40px;
+}
+.info h2{
+    font-size: 25px;
+}
+.info p{
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+}
+.joinBtn{
+    position: relative;
+    top: 60px;
+    padding: .5rem 4rem;
+    background-color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: .5s;
+}
+.joinBtn:hover{
+    background-color: rgba(255, 255, 255, 0.788);
+}
+.joinBtn:active{
+    background-color: rgba(22, 22, 22, 0.788);
+    color: white;
+}
+span{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.barsBtn{
+    position: absolute;
+    width: 50px;
+    height: 50px; 
+    float: right;
+    right: 18px;
+    top:10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .2s;
+    z-index: 411;
+}
+.barsBtn:hover{
+    background-color: rgba(235, 235, 235, 0.658);
+}
+.barsBtn:active{
+    box-shadow:  inset 0px 0px 7px black;
+    background-color: #fff;
+}
+.Bar{
+    position: relative;
+    width: 70%;
+    height: 3px;
+    background-color: rgb(80, 79, 79);
+    margin-top: 9px; 
+    left: 15%;
+    top: 4px;
+    transition: .3s;
+}
+.sideMenu{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(31, 194, 194);  
+    z-index: 222;
+    float: right;
+    right: 0px;
+    box-shadow:  -2px 0px 7px 0px black;
+    transition: .5s;
+    text-align: center;
+    justify-content: center;
+
+}
+.sideImg{
+    position: relative;
+    width: 190px;
+}
+.toggle{
+     width: 50%;
+}
+.btnclicked .Bar:nth-child(1){
+    transform: rotate(50deg);
+    transform-origin: 0px;
+}
+.btnclicked .Bar:nth-child(3){
+    transform: rotate(-50deg);
+    transform-origin: 0px;
+}
+.btnclicked .Bar:nth-child(2){
+   width: 0px;
+}
